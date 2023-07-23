@@ -13,7 +13,7 @@ import Memodified from "../public/Me-modified.png";
 import HFL from "../public/HFL.png";
 import MovieBox from "../public/MovieBox.png";
 import FightMitts from "../public/FightMitts.png";
-import ToDO from "../public/ToDO.png";
+import ToDo from "../public/ToDo.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -245,7 +245,7 @@ export default function Home() {
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
-                  src={ToDO}
+                  src={ToDo}
                   alt="ToDo"
                 />
               </a>
