@@ -1,113 +1,346 @@
-import Image from 'next/image'
+"use client";
+import Head from "next/head";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { BiLogoGmail, BiLogoGoogle } from "react-icons/bi";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { DiCode } from "react-icons/di";
+import { LiaSchoolSolid } from "react-icons/lia";
+import { useState, useEffect } from "react";
+import code from "../public/code.png";
+import design from "../public/design.png";
+import Image from "next/image";
+import Memodified from "../public/Me-modified.png";
+import HFL from "../public/HFL.png";
+import MovieBox from "../public/MovieBox.png";
+import FightMitts from "../public/FightMitts.png";
+import ToDO from "../public/ToDO.png";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    const showButtonThreshold = 200;
+    setShowBackToTop(currentScrollY > showButtonThreshold);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className={darkMode ? "dark" : ""}>
+      <Head>
+        <title>My Portfolio</title>
+      </Head>
+      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+        <section className="min-h-screen">
+          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+            <h1 className="font-mono text-xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Developed+by+Nick+Talledo;Full+Stack+Development;Computer+Science+Undergraduate;Software+Developer;Web+Designer"
+                alt="Typing SVG"
+              />
+            </h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-2xl"
+                />
+              </li>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="https://docs.google.com/document/d/1nYqvThsKoryofRrFBxEiW_6hAOWJ43oR/edit?usp=sharing&ouid=113622204317666744949&rtpof=true&sd=true"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="text-center p-10 py-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+              Nicolas Talledo
+            </h2>
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+              Developer and Designer.
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+              Computer Science Student interested in building web-applications.
+              Knowledable in both Frontend and Backend!
+            </p>
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/nicolas-talledo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillLinkedin />
+              </a>
+              <a href="mailto:nicolastalledo13@gmail.com">
+                <BiLogoGmail />
+              </a>
+            </div>
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <Image src={Memodified} alt="Me" priority={true} />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              I began my college journey with the ambition of pursuing
+              Electrical Engineering. However, I soon discovered that it
+              wasn&apos;t the path that resonated with my passions and
+              aspirations. Determined to find my true calling, I delved into the
+              world of coding and{" "}
+              <span className="text-teal-500"> Web Development </span> through
+              online courses. What started as a curiosity soon transformed into
+              a deep passion for
+              <span className="text-teal-500"> Computer Science </span>. The
+              process of learning and exploring new concepts was exhilarating,
+              and I eventually made the switch to focus on this dynamic field.{" "}
+              <br />
+              <br />
+              <span className="text-teal-500"> Web Development </span> captured
+              my interest like no other. With an insatiable appetite for
+              knowledge, I immersed myself in both{" "}
+              <span className="text-teal-500"> Frontend </span> and{" "}
+              <span className="text-teal-500"> Backend </span> technologies,
+              eager to gain a comprehensive understanding of the entire
+              development process. This journey has been both rewarding and
+              challenging, as I strive to build a diverse skill set and create
+              captivating digital experiences.
+              <br />
+              <br />
+              As I continue to grow and evolve in the world of{" "}
+              <span className="text-teal-500"> Web Development </span>, I am
+              thrilled to embark on new projects and collaborations that push
+              the boundaries of what is possible in the digital realm. I am
+              passionate about creating innovative solutions and contributing to
+              the ever-evolving landscape of technology. With each line of code
+              I write, I&apos;m excited to be part of shaping the future of the
+              web and beyond.
+            </p>
+          </div>
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 transition-transform transform hover:scale-105">
+              <Image src={design} width={100} height={100} alt="Frontend" />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Frontend Development
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Skills</h4>
+              <p className="text-gray-800 py-1">JavaScript</p>
+              <p className="text-gray-800 py-1">HTML</p>
+              <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">React.js & Next.js</p>
+              <p className="text-gray-800 py-1">Bootstrap & Tailwind</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1 transition-transform transform hover:scale-105">
+              <Image src={code} width={100} height={100} alt="Backend" />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                Backend Development
+              </h3>
+              <p className="py-2">
+                Building efficient and scalable server-side systems to power
+                seamless web applications.
+              </p>
+              <h4 className="py-4 text-teal-600">Skills</h4>
+              <p className="text-gray-800 py-1">Node.js</p>
+              <p className="text-gray-800 py-1">PostgresSQL</p>
+              <p className="text-gray-800 py-1">Express.js</p>
+              <p className="text-gray-800 py-1">C++</p>
+            </div>
+          </div>
+        </section>
+        <section className="py-10">
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Throughout my college journey, I have passionately pursued{" "}
+              <span className="text-teal-500"> web development </span>, creating
+              a diverse range of{" "}
+              <span className="text-teal-500"> projects </span> that showcase my
+              skills and dedication. As I approach my senior year, I am proud of
+              the <span className="text-teal-500"> web applications </span> and{" "}
+              <span className="text-teal-500"> websites </span> I have crafted,
+              each <span className="text-teal-500"> project </span> reflecting
+              my growth and expertise in this dynamic field.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Looking forward, I am eager to continue honing my craft and taking
+              on new challenges to make a lasting impact in the world of{" "}
+              <span className="text-teal-500"> web development </span>.
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
+            <div className="rounded-lg basis-1/3 flex-1 ">
+              <a
+                href="https://github.com/NickTalledo/TTP-Project1"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  width={"100%"}
+                  height={"100%"}
+                  src={MovieBox}
+                  alt="MovieBox"
+                />
+              </a>
+            </div>
+            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+              <a href="https://www.hangoverfl.com/" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={HFL}
+                  alt="HFL"
+                />
+              </a>
+            </div>
+            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+              <a
+                href="https://github.com/NickTalledo/Fight-MittsProject"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={FightMitts}
+                  alt="FightMitts"
+                />
+              </a>
+            </div>
+            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+              <a
+                href="https://github.com/NickTalledo/CSC436Project3"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={ToDO}
+                  alt="ToDo"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white ">Experience</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <DiCode className="text-white text-4xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    NYC Tech Talent Pipeline
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Software Developer Resident | Jun 2023 - Aug 2023
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    » Resident at the NYC Tech Talent Pipeline, participating in
+                    a 10 week full-stack bootcamp focused on acquiring essential
+                    technical skills in full-stack software development
+                    methodologies
+                    <br />» Collaborating on real-world projects, attending
+                    industry events, development workshops, and receiving 1:1
+                    mentorship to stay up-to-date with the latest trends in the
+                    tech field
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <BiLogoGoogle className="text-white text-3xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    Google
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Google Software Engineering Program (G-SWEP) via
+                    ProjectBasta | Feb 2023 - May 2023
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    » Rigorous technical 1:1 mentoring sessions with a Google
+                    SWE and workshops designed to enhance technical
+                    problem-solving and interview skills
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-10 pb-20">
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white ">Education</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <LiaSchoolSolid className="text-white text-3xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    City University of New York, College of Staten Island
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    B.S. in Computer Science | Anctipiated Graduation: May 2024
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    » Pursuing a Bachelor&apos;s Degree in Computer Science from
+                    the University of New York <br />» Organizations:
+                    Hack-A-Project Club, ColorStack, CSTEP
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {showBackToTop && (
+          <button
+            className="fixed bottom-4 right-4 p-4 bg-teal-500 text-white rounded-full shadow-lg transition-opacity duration-300 hover:opacity-80"
+            onClick={scrollToTop}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            Back to Top
+          </button>
+        )}
+      </main>
+    </div>
+  );
 }
