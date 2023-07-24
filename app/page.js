@@ -116,7 +116,7 @@ export default function Home() {
               <span className="text-teal-500"> Web Development </span> through
               online courses. What started as a curiosity soon transformed into
               a deep passion for
-              <span className="text-teal-500"> Computer Science </span>. The
+              <span className="text-teal-500"> Computer Science</span>. The
               process of learning and exploring new concepts was exhilarating,
               and I eventually made the switch to focus on this dynamic field.{" "}
               <br />
@@ -133,7 +133,7 @@ export default function Home() {
               <br />
               <br />
               As I continue to grow and evolve in the world of{" "}
-              <span className="text-teal-500"> Web Development </span>, I am
+              <span className="text-teal-500"> Web Development</span>, I am
               thrilled to embark on new projects and collaborations that push
               the boundaries of what is possible in the digital realm. I am
               passionate about creating innovative solutions and contributing to
@@ -181,7 +181,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Throughout my college journey, I have passionately pursued{" "}
-              <span className="text-teal-500"> web development </span>, creating
+              <span className="text-teal-500"> web development</span>, creating
               a diverse range of{" "}
               <span className="text-teal-500"> projects </span> that showcase my
               skills and dedication. As I approach my senior year, I am proud of
@@ -193,7 +193,7 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Looking forward, I am eager to continue honing my craft and taking
               on new challenges to make a lasting impact in the world of{" "}
-              <span className="text-teal-500"> web development </span>.
+              <span className="text-teal-500"> web development</span>.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
