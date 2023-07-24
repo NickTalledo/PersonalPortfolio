@@ -181,7 +181,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Throughout my college journey, I have passionately pursued{" "}
-              <span className="text-teal-500"> web development</span>, creating
+              <span className="text-teal-500"> Web Development</span>, creating
               a diverse range of{" "}
               <span className="text-teal-500"> projects </span> that showcase my
               skills and dedication. As I approach my senior year, I am proud of
@@ -193,7 +193,7 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Looking forward, I am eager to continue honing my craft and taking
               on new challenges to make a lasting impact in the world of{" "}
-              <span className="text-teal-500"> web development</span>.
+              <span className="text-teal-500"> Web Development</span>.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
