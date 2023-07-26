@@ -6,14 +6,18 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { DiCode } from "react-icons/di";
 import { LiaSchoolSolid } from "react-icons/lia";
 import { useState, useEffect } from "react";
-import code from "../public/code.png";
-import design from "../public/design.png";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
 import HFL from "../public/HFL.png";
 import MovieBox from "../public/MovieBox.png";
 import FightMitts from "../public/FightMitts.png";
 import ToDo from "../public/ToDo.png";
+import Frontend from "../public/Frontend.png";
+import Backend from "../public/Backend.png";
+import About from "../public/About.png";
+import Folder from "../public/Folder.png";
+import Notebook from "../public/Notebook.png";
+import Tools from "../public/Tools.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -105,7 +109,10 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>{" "}
+              <Image src={About} width={100} height={80} alt="About" />
+            </div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I began my college journey with the ambition of pursuing
@@ -144,7 +151,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 transition-transform transform hover:scale-105">
-              <Image src={design} width={100} height={100} alt="Frontend" />
+              <Image src={Frontend} width={100} height={100} alt="Frontend" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Frontend Development
               </h3>
@@ -160,7 +167,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Bootstrap & Tailwind</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1 transition-transform transform hover:scale-105">
-              <Image src={code} width={100} height={100} alt="Backend" />
+              <Image src={Backend} width={100} height={100} alt="Backend" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Backend Development
               </h3>
@@ -178,7 +185,11 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>{" "}
+              <Image src={Folder} width={100} height={80} alt="Folder" />
+            </div>
+
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Throughout my college journey, I have passionately pursued{" "}
               <span className="text-teal-500"> Web Development</span>, creating
@@ -254,7 +265,10 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Experience</h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-3xl py-1 dark:text-white ">Experience</h3>
+              <Image src={Tools} width={100} height={100} alt="Tools" />
+            </div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="flex">
@@ -307,7 +321,10 @@ export default function Home() {
         </section>
         <section className="py-10 pb-20">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Education</h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-3xl py-1 dark:text-white ">Education</h3>
+              <Image src={Notebook} width={100} height={100} alt="Notebook" />
+            </div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="flex">
@@ -332,6 +349,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {showBackToTop && (
           <button
             className="fixed bottom-4 right-4 p-4 bg-teal-500 text-white rounded-full shadow-lg transition-opacity duration-300 hover:opacity-80"
@@ -341,6 +359,11 @@ export default function Home() {
           </button>
         )}
       </main>
+      <footer className="bg-teal-500 text-white text-center py-4">
+        <p className="text-sm">
+          &copy; 2023 Nicolas Talledo. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
