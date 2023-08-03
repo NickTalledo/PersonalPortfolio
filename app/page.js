@@ -110,8 +110,8 @@ export default function Home() {
         <section>
           <div>
             <div className="flex items-center gap-2">
-              <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>{" "}
               <Image src={About} width={100} height={80} alt="About" />
+              <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>{" "}
             </div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
