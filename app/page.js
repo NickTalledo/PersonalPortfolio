@@ -11,7 +11,7 @@ import Memodified from "../public/Me-modified.png";
 import HFL from "../public/HFL.png";
 import MovieBox from "../public/MovieBox.png";
 import Bitcoin from "../public/Bitcoin.png";
-import Flexfusion from "../public/Flexfusion.png";
+import Flexfusion from "../public/FlexFusion.png";
 import FightMitts from "../public/FightMitts.png";
 import ToDo from "../public/ToDo.png";
 import Frontend from "../public/Frontend.png";
