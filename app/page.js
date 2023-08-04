@@ -10,6 +10,8 @@ import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
 import HFL from "../public/HFL.png";
 import MovieBox from "../public/MovieBox.png";
+import Bitcoin from "../public/Bitcoin.png";
+import Flexfusion from "../public/Flexfusion.png";
 import FightMitts from "../public/FightMitts.png";
 import ToDo from "../public/ToDo.png";
 import Frontend from "../public/Frontend.png";
@@ -210,6 +212,20 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
             <div className="rounded-lg basis-1/3 flex-1 ">
               <a
+                href="https://github.com/PatrickLisiecki/flex-fusion"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  width={"100%"}
+                  height={"100%"}
+                  src={Flexfusion}
+                  alt="Flexfusion"
+                />
+              </a>
+            </div>
+            <div className="rounded-lg basis-1/3 flex-1 ">
+              <a
                 href="https://github.com/NickTalledo/TTP-Project1"
                 target="_blank"
               >
@@ -222,7 +238,7 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105 ">
               <a href="https://www.hangoverfl.com/" target="_blank">
                 <Image
                   className="rounded-lg object-cover"
@@ -230,6 +246,20 @@ export default function Home() {
                   height={"100%"}
                   src={HFL}
                   alt="HFL"
+                />
+              </a>
+            </div>
+            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+              <a
+                href="https://github.com/NickTalledo/Bitcoin-Converter"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={Bitcoin}
+                  alt="Bitcoin"
                 />
               </a>
             </div>
