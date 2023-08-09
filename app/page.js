@@ -217,8 +217,7 @@ export default function Home() {
               >
                 <Image
                   className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
-                  width={"100%"}
-                  height={"100%"}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={Flexfusion}
                   alt="Flexfusion"
                 />
@@ -231,61 +230,56 @@ export default function Home() {
               >
                 <Image
                   className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
-                  width={"100%"}
-                  height={"100%"}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={MovieBox}
                   alt="MovieBox"
                 />
               </a>
             </div>
-            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105 ">
+            <div className="rounded-lg basis-1/3 flex-1 ">
               <a href="https://www.hangoverfl.com/" target="_blank">
                 <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={HFL}
                   alt="HFL"
                 />
               </a>
             </div>
-            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+            <div className="rounded-lg basis-1/3 flex-1">
               <a
                 href="https://github.com/NickTalledo/Bitcoin-Converter"
                 target="_blank"
               >
                 <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={Bitcoin}
                   alt="Bitcoin"
                 />
               </a>
             </div>
-            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+            <div className="rounded-lg basis-1/3 flex-1">
               <a
                 href="https://github.com/NickTalledo/Fight-MittsProject"
                 target="_blank"
               >
                 <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={FightMitts}
                   alt="FightMitts"
                 />
               </a>
             </div>
-            <div className="rounded-lg basis-1/3 flex-1 border-2 border-teal-600 transition-transform transform hover:scale-105">
+            <div className="rounded-lg basis-1/3 flex-1">
               <a
                 href="https://github.com/NickTalledo/CSC436Project3"
                 target="_blank"
               >
                 <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={ToDo}
                   alt="ToDo"
                 />
