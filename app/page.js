@@ -86,7 +86,7 @@ export default function Home() {
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a
-                href="https://github.com/"
+                href="https://github.com/NickTalledo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
