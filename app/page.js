@@ -8,7 +8,7 @@ import { LiaSchoolSolid } from "react-icons/lia";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
-import HFL from "../public/HFL.png";
+import HFL2 from "../public/HFL2.png";
 import MovieBox from "../public/MovieBox.png";
 import Bitcoin from "../public/Bitcoin.png";
 import Flexfusion from "../public/FlexFusion.png";
@@ -152,36 +152,44 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 transition-transform transform hover:scale-105">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-teal-500 flex-1 transition-transform transform hover:scale-105">
               <Image src={Frontend} width={100} height={100} alt="Frontend" />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white  ">
                 Frontend Development
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-white">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">Skills</h4>
-              <p className="text-gray-800 py-1">JavaScript</p>
-              <p className="text-gray-800 py-1">HTML</p>
-              <p className="text-gray-800 py-1">CSS</p>
-              <p className="text-gray-800 py-1">React.js & Next.js</p>
-              <p className="text-gray-800 py-1">Bootstrap & Tailwind</p>
+              <h4 className="py-4 text-teal-600 dark:text-yellow-300">
+                Skills
+              </h4>
+              <p className="text-gray-800 py-1 dark:text-white">JavaScript</p>
+              <p className="text-gray-800 py-1 dark:text-white">HTML</p>
+              <p className="text-gray-800 py-1 dark:text-white">CSS</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                React.js & Next.js
+              </p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                Bootstrap & Tailwind
+              </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1 transition-transform transform hover:scale-105">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-teal-500 flex-1 transition-transform transform hover:scale-105">
               <Image src={Backend} width={100} height={100} alt="Backend" />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Backend Development
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-white">
                 Building efficient and scalable server-side systems to power
                 seamless web applications.
               </p>
-              <h4 className="py-4 text-teal-600">Skills</h4>
-              <p className="text-gray-800 py-1">Node.js</p>
-              <p className="text-gray-800 py-1">PostgresSQL</p>
-              <p className="text-gray-800 py-1">Express.js</p>
-              <p className="text-gray-800 py-1">C++</p>
+              <h4 className="py-4 text-teal-600 dark:text-yellow-300">
+                Skills
+              </h4>
+              <p className="text-gray-800 py-1 dark:text-white">Node.js</p>
+              <p className="text-gray-800 py-1 dark:text-white">PostgresSQL</p>
+              <p className="text-gray-800 py-1 dark:text-white">Express.js</p>
+              <p className="text-gray-800 py-1 dark:text-white">C++</p>
             </div>
           </div>
         </section>
@@ -241,8 +249,8 @@ export default function Home() {
                 <Image
                   className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  src={HFL}
-                  alt="HFL"
+                  src={HFL2}
+                  alt="HFL2"
                 />
               </a>
             </div>
