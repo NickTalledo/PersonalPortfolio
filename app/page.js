@@ -189,6 +189,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">Node.js</p>
               <p className="text-gray-800 py-1 dark:text-white">PostgresSQL</p>
               <p className="text-gray-800 py-1 dark:text-white">Express.js</p>
+              <p className="text-gray-800 py-1 dark:text-white">Supabase</p>
               <p className="text-gray-800 py-1 dark:text-white">C++</p>
             </div>
           </div>
