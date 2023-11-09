@@ -13,7 +13,7 @@ import MovieBox from "../public/MovieBox.png";
 import Bitcoin from "../public/Bitcoin.png";
 import Flexfusion from "../public/FlexFusion.png";
 import FightMitts from "../public/FightMitts.png";
-import ToDo from "../public/ToDo.png";
+import JediCreator from "../public/JediCreator.png";
 import Frontend from "../public/Frontend.png";
 import Backend from "../public/Backend.png";
 import About from "../public/About.png";
@@ -270,6 +270,19 @@ export default function Home() {
             </div>
             <div className="rounded-lg basis-1/3 flex-1">
               <a
+                href="https://github.com/NickTalledo/JediCreator"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  src={JediCreator}
+                  alt="JediCreator"
+                />
+              </a>
+            </div>
+            <div className="rounded-lg basis-1/3 flex-1">
+              <a
                 href="https://github.com/NickTalledo/Fight-MittsProject"
                 target="_blank"
               >
@@ -278,19 +291,6 @@ export default function Home() {
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={FightMitts}
                   alt="FightMitts"
-                />
-              </a>
-            </div>
-            <div className="rounded-lg basis-1/3 flex-1">
-              <a
-                href="https://github.com/NickTalledo/CSC436Project3"
-                target="_blank"
-              >
-                <Image
-                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  src={ToDo}
-                  alt="ToDo"
                 />
               </a>
             </div>
