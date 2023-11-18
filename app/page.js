@@ -12,7 +12,7 @@ import HFL2 from "../public/HFL2.png";
 import MovieBox from "../public/MovieBox.png";
 import Bitcoin from "../public/Bitcoin.png";
 import Flexfusion from "../public/FlexFusion.png";
-import FightMitts from "../public/FightMitts.png";
+import MindfulMeadows from "../public/MindfulMeadows.png";
 import JediCreator from "../public/JediCreator.png";
 import Frontend from "../public/Frontend.png";
 import Backend from "../public/Backend.png";
@@ -219,6 +219,30 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
+            <div className="rounded-lg basis-1/3 flex-1">
+              <a
+                href="https://verdant-horse-7c3348.netlify.app/home"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  src={MindfulMeadows}
+                  alt="MindfulMeadows"
+                />
+              </a>
+            </div>
+            <div className="rounded-lg basis-1/3 flex-1 ">
+              <a href="https://www.hangoverfl.com/" target="_blank">
+                <Image
+                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  src={HFL2}
+                  alt="HFL2"
+                />
+              </a>
+            </div>
+
             <div className="rounded-lg basis-1/3 flex-1 ">
               <a
                 href="https://github.com/PatrickLisiecki/flex-fusion"
@@ -245,29 +269,7 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="rounded-lg basis-1/3 flex-1 ">
-              <a href="https://www.hangoverfl.com/" target="_blank">
-                <Image
-                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  src={HFL2}
-                  alt="HFL2"
-                />
-              </a>
-            </div>
-            <div className="rounded-lg basis-1/3 flex-1">
-              <a
-                href="https://github.com/NickTalledo/Bitcoin-Converter"
-                target="_blank"
-              >
-                <Image
-                  className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  src={Bitcoin}
-                  alt="Bitcoin"
-                />
-              </a>
-            </div>
+
             <div className="rounded-lg basis-1/3 flex-1">
               <a
                 href="https://github.com/NickTalledo/JediCreator"
@@ -283,14 +285,14 @@ export default function Home() {
             </div>
             <div className="rounded-lg basis-1/3 flex-1">
               <a
-                href="https://github.com/NickTalledo/Fight-MittsProject"
+                href="https://github.com/NickTalledo/Bitcoin-Converter"
                 target="_blank"
               >
                 <Image
                   className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  src={FightMitts}
-                  alt="FightMitts"
+                  src={Bitcoin}
+                  alt="Bitcoin"
                 />
               </a>
             </div>
