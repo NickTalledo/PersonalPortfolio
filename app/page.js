@@ -221,7 +221,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
             <div className="rounded-lg basis-1/3 flex-1">
               <a
-                href="https://verdant-horse-7c3348.netlify.app/home"
+                href="https://mindfulmeadows.netlify.app/"
                 target="_blank"
               >
                 <Image
