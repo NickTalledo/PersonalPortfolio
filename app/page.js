@@ -5,6 +5,9 @@ import { BiLogoGmail, BiLogoGoogle } from "react-icons/bi";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { DiCode } from "react-icons/di";
 import { LiaSchoolSolid } from "react-icons/lia";
+import { MdOutlineSecurity } from "react-icons/md";
+import { DiJavascript1 } from "react-icons/di";
+import { CgWebsite } from "react-icons/cg";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
@@ -20,6 +23,7 @@ import About from "../public/About.png";
 import Folder from "../public/Folder.png";
 import Notebook from "../public/Notebook.png";
 import Tools from "../public/Tools.png";
+import File from "../public/File.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -220,10 +224,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
             <div className="rounded-lg basis-1/3 flex-1">
-              <a
-                href="https://mindfulmeadows.netlify.app/"
-                target="_blank"
-              >
+              <a href="https://mindfulmeadows.netlify.app/" target="_blank">
                 <Image
                   className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -354,7 +355,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-10 pb-20">
+        <section className="py-10">
           <div>
             <div className="flex items-center gap-2">
               <h3 className="text-3xl py-1 dark:text-white ">Education</h3>
@@ -378,6 +379,63 @@ export default function Home() {
                     » Pursuing a Bachelor&apos;s Degree in Computer Science from
                     the University of New York <br />» Organizations:
                     Hack-A-Project Club, ColorStack, CSTEP
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="pb-20">
+          <div>
+            <div className="flex items-center gap-2">
+              <h3 className="text-3xl py-1 dark:text-white ">Certifications</h3>
+              <Image src={File} width={100} height={100} alt="Notebook" />
+            </div>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <MdOutlineSecurity className="text-white text-3xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    Coursera
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Cybersecurity | July 2023 - November 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6 pt-8">
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <CgWebsite className="text-white text-3xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    Great Learning | July 2023
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Full Stack Development
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6 pt-8">
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <DiJavascript1 className="text-white text-3xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    Free Code Camp
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    JavaScript and Algorithms and Data Structures | January 2023
                   </p>
                 </div>
               </div>
