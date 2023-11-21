@@ -416,10 +416,10 @@ export default function Home() {
                 </div>
                 <div className="flex-1 ml-4">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                    Great Learning | July 2023
+                    Great Learning
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Full Stack Development
+                    Full Stack Development | July 2023
                   </p>
                 </div>
               </div>
