@@ -5,7 +5,7 @@ import { BiLogoGmail, BiLogoGoogle } from "react-icons/bi";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { DiCode } from "react-icons/di";
 import { LiaSchoolSolid } from "react-icons/lia";
-import { MdOutlineSecurity } from "react-icons/md";
+import { MdComputer, MdOutlineSecurity } from "react-icons/md";
 import { DiJavascript1 } from "react-icons/di";
 import { CgWebsite } from "react-icons/cg";
 import { useState, useEffect } from "react";
@@ -395,6 +395,22 @@ export default function Home() {
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="flex">
                 <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <MdComputer className="text-white text-3xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    CodePath
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Web Development | September 2023 - November 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6 pt-8">
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
                   <MdOutlineSecurity className="text-white text-3xl" />
                   <span className="text-white text-2xl"></span>
                 </div>
@@ -403,7 +419,7 @@ export default function Home() {
                     Coursera
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Cybersecurity | July 2023 - November 2023
+                    Google Cybersecurity | July 2023 - November 2023
                   </p>
                 </div>
               </div>
