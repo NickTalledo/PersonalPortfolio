@@ -190,10 +190,12 @@ export default function Home() {
               <h4 className="py-4 text-teal-600 dark:text-yellow-300">
                 Skills
               </h4>
-              <p className="text-gray-800 py-1 dark:text-white">Node.js</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                Express.js & Node.js
+              </p>
               <p className="text-gray-800 py-1 dark:text-white">PostgresSQL</p>
-              <p className="text-gray-800 py-1 dark:text-white">Express.js</p>
               <p className="text-gray-800 py-1 dark:text-white">Supabase</p>
+              <p className="text-gray-800 py-1 dark:text-white">Python</p>
               <p className="text-gray-800 py-1 dark:text-white">C++</p>
             </div>
           </div>
