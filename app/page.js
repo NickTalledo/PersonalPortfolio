@@ -8,6 +8,7 @@ import { LiaSchoolSolid } from "react-icons/lia";
 import { MdComputer, MdOutlineSecurity } from "react-icons/md";
 import { DiJavascript1 } from "react-icons/di";
 import { CgWebsite } from "react-icons/cg";
+import { SiHackaday } from "react-icons/si";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
@@ -85,7 +86,7 @@ export default function Home() {
               Developer and Designer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Computer Science Student interested in building web-applications.
+              Software Engineer interested in building web-applications.
               Knowledgeable in both Frontend and Backend!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -212,8 +213,9 @@ export default function Home() {
               <span className="text-teal-500"> Web Development</span>, creating
               a diverse range of{" "}
               <span className="text-teal-500"> projects </span> that showcase my
-              skills and dedication. As I approach my senior year, I am proud of
-              the <span className="text-teal-500"> web applications </span> and{" "}
+              skills and dedication. As I go on into my software development
+              career, I am proud of the{" "}
+              <span className="text-teal-500"> web applications </span> and{" "}
               <span className="text-teal-500"> websites </span> I have crafted,
               each <span className="text-teal-500"> project </span> reflecting
               my growth and expertise in this dynamic field.
@@ -395,6 +397,22 @@ export default function Home() {
             </div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
             <div className="max-w-4xl mx-auto space-y-6">
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <SiHackaday className="text-white text-3xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    TCM Security
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Ethical Hacking | January 2024 - February 2024
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6 pt-8">
               <div className="flex">
                 <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
                   <MdComputer className="text-white text-3xl" />
