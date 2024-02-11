@@ -249,10 +249,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-lg basis-1/3 flex-1 ">
-              <a
-                href="https://github.com/PatrickLisiecki/flex-fusion"
-                target="_blank"
-              >
+              <a href="https://flexfusion.xyz/" target="_blank">
                 <Image
                   className="rounded-lg object-cover border-2 border-teal-600 transition-transform transform hover:scale-105"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
