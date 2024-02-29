@@ -316,7 +316,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 ml-4">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                    The Difference App LLC
+                    The Difference App
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Software Engineering Intern | Feb 2024 - Present
