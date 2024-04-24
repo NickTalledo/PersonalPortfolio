@@ -319,12 +319,13 @@ export default function Home() {
                     The Difference App
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Software Engineering Intern | Feb 2024 - Present
+                    Software Engineering Intern | Feb 2024 - Apr 2024
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    » Collaborating with a team of interns to develop a
-                    web-based version of a weight management technology using
-                    CSS, HTML, JavaScript (React), NodeJS, & NextJS
+                    » Designed intuitive mobile interfaces using Figma, focusing
+                    on user-friendly design principles
+                    <br /> » Developed and implemented these designs into
+                    functional mobile apps using Flutter
                   </p>
                 </div>
               </div>
