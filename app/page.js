@@ -326,6 +326,9 @@ export default function Home() {
                     on user-friendly design principles
                     <br /> » Developed and implemented these designs into
                     functional mobile apps using Flutter
+                    <br /> » Collaborated on the web version of the application,
+                    utilizing React to create responsive and dynamic user
+                    features
                   </p>
                 </div>
               </div>
