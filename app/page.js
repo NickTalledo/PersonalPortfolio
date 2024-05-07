@@ -398,7 +398,8 @@ export default function Home() {
                     City University of New York, College of Staten Island
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    B.S. in Computer Science | Anctipiated Graduation: May 2024
+                    B.S. in Computer Science | Anctipiated Graduation: August
+                    2024
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     » Pursuing a Bachelor&apos;s Degree in Computer Science from
