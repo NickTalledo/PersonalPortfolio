@@ -10,6 +10,7 @@ import { DiJavascript1 } from "react-icons/di";
 import { CgWebsite } from "react-icons/cg";
 import { SiHackaday } from "react-icons/si";
 import { GiWeight } from "react-icons/gi";
+import { FaBriefcaseMedical } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
@@ -311,6 +312,26 @@ export default function Home() {
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="flex">
                 <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <FaBriefcaseMedical className="text-white text-4xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    OneMedical
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Software Engineering Intern | Jun 2024 - Present
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    » Enhancing patient access and provider workflows using
+                    React, Ruby on Rails, and Angular
+                    <br /> » Collaborating cross-functionally to optimize
+                    internal tools for better patient and provider experiences
+                  </p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
                   <GiWeight className="text-white text-4xl" />
                   <span className="text-white text-2xl"></span>
                 </div>
@@ -371,9 +392,9 @@ export default function Home() {
                     ProjectBasta | Feb 2023 - May 2023
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    » Rigorous technical 1:1 mentoring sessions with a Google
-                    SWE and workshops designed to enhance technical
-                    problem-solving and interview skills
+                    » Engaged in 1:1 mentoring and workshops to enhance
+                    technical problem-solving and interview skills with a Google
+                    SWE
                   </p>
                 </div>
               </div>
