@@ -66,12 +66,12 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                 />
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="https://docs.google.com/document/d/1nYqvThsKoryofRrFBxEiW_6hAOWJ43oR/edit?usp=sharing&ouid=113622204317666744949&rtpof=true&sd=true"
                   target="_blank"
                 >
@@ -99,7 +99,6 @@ export default function Home() {
               >
                 <AiFillGithub />
               </a>
-
               <a
                 href="https://www.linkedin.com/in/nicolas-talledo/"
                 target="_blank"
@@ -111,11 +110,27 @@ export default function Home() {
                 <BiLogoGmail />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={Memodified} alt="Me" priority={true} />
+            <div className="flex justify-center items-center mx-auto w-full mt-20">
+              <div
+                className="rounded-full relative overflow-hidden"
+                style={{
+                  width: "80vw",
+                  height: "80vw",
+                  maxWidth: "320px",
+                  maxHeight: "320px",
+                }}
+              >
+                <Image
+                  src={Memodified}
+                  alt="Me"
+                  priority={true}
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </section>
+
         <section>
           <div>
             <div className="flex items-center gap-2">
@@ -171,11 +186,13 @@ export default function Home() {
               <h4 className="py-4 text-teal-600 dark:text-yellow-300">
                 Skills
               </h4>
-              <p className="text-gray-800 py-1 dark:text-white">JavaScript</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                JavaScript & TypeScript
+              </p>
               <p className="text-gray-800 py-1 dark:text-white">HTML</p>
               <p className="text-gray-800 py-1 dark:text-white">CSS</p>
               <p className="text-gray-800 py-1 dark:text-white">
-                React.js & Next.js
+                React.js & Next.js & Angular
               </p>
               <p className="text-gray-800 py-1 dark:text-white">
                 Bootstrap & Tailwind
@@ -199,7 +216,9 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">PostgresSQL</p>
               <p className="text-gray-800 py-1 dark:text-white">Supabase</p>
               <p className="text-gray-800 py-1 dark:text-white">Python</p>
-              <p className="text-gray-800 py-1 dark:text-white">C++</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                Ruby on Rails
+              </p>
             </div>
           </div>
         </section>
@@ -323,10 +342,14 @@ export default function Home() {
                     Software Engineering Intern | Jun 2024 - Present
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    » Enhancing patient access and provider workflows using
-                    React, Ruby on Rails, and Angular
-                    <br /> » Collaborating cross-functionally to optimize
-                    internal tools for better patient and provider experiences
+                    » Enhancing patient access and provider workflows using Ruby
+                    on Rails and Angular
+                    <br /> » Implemented Mixpanel analytics tracking in a
+                    complex Angular application, ensuring accurate data
+                    collection
+                    <br /> » Removed feature flag and streamlined codebase by
+                    ensuring continuous functionality for patient appointment
+                    types
                   </p>
                 </div>
               </div>
