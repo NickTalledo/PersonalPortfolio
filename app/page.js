@@ -189,8 +189,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">
                 JavaScript & TypeScript
               </p>
-              <p className="text-gray-800 py-1 dark:text-white">HTML</p>
-              <p className="text-gray-800 py-1 dark:text-white">CSS</p>
+              <p className="text-gray-800 py-1 dark:text-white">HTML & CSS</p>
               <p className="text-gray-800 py-1 dark:text-white">
                 React.js & Next.js & Angular
               </p>
@@ -213,8 +212,9 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">
                 Express.js & Node.js
               </p>
-              <p className="text-gray-800 py-1 dark:text-white">PostgresSQL</p>
-              <p className="text-gray-800 py-1 dark:text-white">Supabase</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                PostgresSQL & Supabase
+              </p>
               <p className="text-gray-800 py-1 dark:text-white">Python</p>
               <p className="text-gray-800 py-1 dark:text-white">
                 Ruby on Rails
