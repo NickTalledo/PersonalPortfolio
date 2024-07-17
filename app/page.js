@@ -336,14 +336,14 @@ export default function Home() {
                 </div>
                 <div className="flex-1 ml-4">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                    OneMedical
+                    Amazon One Medical
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Software Engineering Intern | Jun 2024 - Present
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    » Enhancing patient access and provider workflows using Ruby
-                    on Rails and Angular
+                    » Implemented provider bios in the booking flow, improving
+                    patient engagement and user experience
                     <br /> » Implemented Mixpanel analytics tracking in a
                     complex Angular application, ensuring accurate data
                     collection
