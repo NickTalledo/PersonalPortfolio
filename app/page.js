@@ -11,6 +11,7 @@ import { CgWebsite } from "react-icons/cg";
 import { SiHackaday } from "react-icons/si";
 import { GiWeight } from "react-icons/gi";
 import { FaBriefcaseMedical } from "react-icons/fa";
+import { PiPathThin } from "react-icons/pi";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
@@ -331,8 +332,23 @@ export default function Home() {
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="flex">
                 <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
-                  <FaBriefcaseMedical className="text-white text-4xl" />
+                  <PiPathThin className="text-white text-4xl" />
                   <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    CodePath
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Tech Fellow | July 2024 - Present
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    » Mentored students, facilitated technical workshops, and
+                    fostered a collaborative learning environment
+                    <br /> » Guided students through complex coding challenges,
+                    enhancing their problem-solving skills and technical
+                    knowledge
+                  </p>
                 </div>
                 <div className="flex-1 ml-4">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
