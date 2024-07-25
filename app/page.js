@@ -350,6 +350,12 @@ export default function Home() {
                     knowledge
                   </p>
                 </div>
+              </div>
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <FaBriefcaseMedical className="text-white text-4xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
                 <div className="flex-1 ml-4">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
                     Amazon One Medical
