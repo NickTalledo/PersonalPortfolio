@@ -11,7 +11,7 @@ import { CgWebsite } from "react-icons/cg";
 import { SiHackaday } from "react-icons/si";
 import { GiWeight } from "react-icons/gi";
 import { FaBriefcaseMedical } from "react-icons/fa";
-import { PiPathThin } from "react-icons/pi";
+import { TbCircleLetterCFilled } from "react-icons/tb";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
@@ -293,7 +293,6 @@ export default function Home() {
                 />
               </a>
             </div>
-
             <div className="rounded-lg basis-1/3 flex-1">
               <a
                 href="https://github.com/NickTalledo/JediCreator"
@@ -332,7 +331,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="flex">
                 <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
-                  <PiPathThin className="text-white text-4xl" />
+                  <TbCircleLetterCFilled className="text-white text-4xl" />
                   <span className="text-white text-2xl"></span>
                 </div>
                 <div className="flex-1 ml-4">
