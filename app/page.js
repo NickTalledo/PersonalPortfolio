@@ -339,7 +339,27 @@ export default function Home() {
                     Amazon One Medical
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Software Engineering Intern | Jun 2024 - Present
+                    Associate Engineer | September 2024 - Present
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    » Collaborate on cross-functional projects to enhance
+                    patient engagement
+                    <br /> » Develop and maintain scalable healthcare web
+                    applications
+                  </p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <FaBriefcaseMedical className="text-white text-4xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    Amazon One Medical
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Software Engineering Intern | Jun 2024 - Aug 2024
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     » Implemented provider bios in the booking flow, improving
@@ -400,7 +420,6 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-
               <div className="flex">
                 <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
                   <BiLogoGoogle className="text-white text-3xl" />
