@@ -339,13 +339,12 @@ export default function Home() {
                     Amazon One Medical
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Associate Engineer | September 2024 - Present
+                    Software Engineer | September 2024 - Present
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    » Collaborate on cross-functional projects to enhance
-                    patient engagement
-                    <br /> » Develop and maintain scalable healthcare web
-                    applications
+                    » Developed dashboards on Grafana for API endpoints and GraphQL queries/mutations
+                    <br /> » Developed dashboards and configured CloudWatch alarms for real-time service monitoring and alerting
+                    <br /> » Implemented Mixpanel analytics across multiple user interactions to enhance data visibility
                   </p>
                 </div>
               </div>
@@ -461,11 +460,11 @@ export default function Home() {
                     City University of New York, College of Staten Island
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    B.S. in Computer Science | Anctipiated Graduation: August
+                    B.S. in Computer Science | Graduation Date: August
                     2024
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    » Pursuing a Bachelor&apos;s Degree in Computer Science from
+                    » Achieved a Bachelor&apos;s Degree in Computer Science from
                     the University of New York <br />» Organizations:
                     Hack-A-Project Club, ColorStack, CSTEP
                   </p>
