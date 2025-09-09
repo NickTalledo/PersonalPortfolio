@@ -11,6 +11,7 @@ import { CgWebsite } from "react-icons/cg";
 import { SiHackaday } from "react-icons/si";
 import { GiWeight } from "react-icons/gi";
 import { FaBriefcaseMedical } from "react-icons/fa";
+import { MdSystemSecurityUpdateGood } from 'react-icons/md';
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Memodified from "../public/Me-modified.png";
@@ -329,6 +330,24 @@ export default function Home() {
             </div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"></p>
             <div className="max-w-4xl mx-auto space-y-6">
+                            <div className="flex">
+                <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
+                  <MdSystemSecurityUpdateGood className="text-white text-4xl" />
+                  <span className="text-white text-2xl"></span>
+                </div>
+                <div className="flex-1 ml-4">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    Amazon - AWS Wickr
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Software Dev Engineer | Sept 2025 - Present 
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    » Building secure, high-performance iOS components for Wickr&apos;s end-to-end encrypted messaging platform
+                    <br /> » Contributing to UI features, cryptographic integrations, and performance optimizations in Swift
+                  </p>
+                </div>
+              </div>
               <div className="flex">
                 <div className="flex-none w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center">
                   <FaBriefcaseMedical className="text-white text-4xl" />
@@ -336,13 +355,15 @@ export default function Home() {
                 </div>
                 <div className="flex-1 ml-4">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                    Amazon One Medical
+                    Amazon - One Medical
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Software Engineer | September 2024 - Present
+                    Software Dev Engineer | Sept 2024 - Sept 2025
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    » Developed dashboards on Grafana for API endpoints and GraphQL queries/mutations
+                    » Implemented Angular experiments to simplify booking flows via conditional inputs and dynamic UI rendering
+                    <br /> » Contributed to iOS development by implementing UI updates and booking logic in Swift
+                    <br /> » Developed dashboards on Grafana for API endpoints and GraphQL queries/mutations
                     <br /> » Developed dashboards and configured CloudWatch alarms for real-time service monitoring and alerting
                     <br /> » Implemented Mixpanel analytics across multiple user interactions to enhance data visibility
                   </p>
@@ -355,7 +376,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 ml-4">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                    Amazon One Medical
+                    Amazon - One Medical
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Software Engineering Intern | Jun 2024 - Aug 2024
@@ -574,7 +595,7 @@ export default function Home() {
       </main>
       <footer className="bg-teal-500 text-white text-center py-4">
         <p className="text-sm">
-          &copy; 2023 Nicolas Talledo. All rights reserved.
+          &copy; 2025 Nicolas Talledo. All rights reserved.
         </p>
       </footer>
     </div>
