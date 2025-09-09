@@ -53,7 +53,7 @@ export default function Home() {
         <title>My Portfolio</title>
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-        <section className="min-h-screen">
+        <section>
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-mono text-xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -80,14 +80,14 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+          <div className="text-center p-10 pt-6 pb-0">
+            <h2 className="text-5xl mb-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Nicolas Talledo
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-2xl mb-2 dark:text-white md:text-3xl">
               Developer and Designer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            <p className="text-md mt-4 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Software Engineer interested in building web-applications.
               Knowledgeable in both Frontend and Backend!
             </p>
@@ -110,7 +110,7 @@ export default function Home() {
                 <BiLogoGmail />
               </a>
             </div>
-            <div className="flex justify-center items-center mx-auto w-full mt-20">
+            <div className="flex justify-center items-center mx-auto w-full mt-8 md:mt-10">
               <div
                 className="rounded-full relative overflow-hidden"
                 style={{
@@ -323,7 +323,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 px-4 md:px-0 md:mx-auto md:max-w-4xl">
               <h3 className="text-3xl py-1 dark:text-white ">Experience</h3>
               <Image src={Tools} width={100} height={100} alt="Tools" />
             </div>
@@ -444,7 +444,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 px-4 md:px-0 md:mx-auto md:max-w-4xl">
               <h3 className="text-3xl py-1 dark:text-white ">Education</h3>
               <Image src={Notebook} width={100} height={100} alt="Notebook" />
             </div>
@@ -475,7 +475,7 @@ export default function Home() {
         </section>
         <section className="pb-20">
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 px-4 md:px-0 md:mx-auto md:max-w-4xl">
               <h3 className="text-3xl py-1 dark:text-white ">Certifications</h3>
               <Image src={File} width={100} height={100} alt="Notebook" />
             </div>
